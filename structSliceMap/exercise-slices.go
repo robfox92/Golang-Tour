@@ -16,7 +16,9 @@ func Pic(dx, dy int) [][]uint8 {
 
     // assign values to the arrays
     for j:= range arr[i]{
-      arr[i][j] = uint8((i+j)/2)
+//      arr[i][j] = uint8((i+j)/2)
+      arr[i][j] = uint8(i*j)
+//      arr[i][j] = uint8(i^j)
     }
   }
   return arr
