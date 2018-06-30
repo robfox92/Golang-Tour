@@ -10,6 +10,8 @@ func main() {
   r := strings.NewReader("Hello, Reader!")
 
   b := make([]byte, 8)
+
+
   n, err := r.Read(b)
 
   for err == nil {
